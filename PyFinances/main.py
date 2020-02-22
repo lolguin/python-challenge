@@ -17,7 +17,7 @@ dates = []
 summary_dict = {}
 
 #define csv path
-csvpath = os.path.join('../..', 'Input', filename)
+csvpath = os.path.join('Input', filename)
 
 #open csv file with encoding
 with open(csvpath, encoding = 'utf-8') as csvfile:
@@ -65,7 +65,7 @@ print("Greatest Increase in Profits: " + summary_dict[max_change] + " ($" + str(
 print("Greatest Decrease in Profits: " + summary_dict[min_change] + " ($" + str(min_change) +")")
 
 # Specify the file to write to
-output_path = os.path.join("../..", "Output", "finance_summary.csv")
+output_path = os.path.join( "Output", "finance_summary.csv")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline = "") as datafile:

@@ -16,7 +16,7 @@ total_votes = 0
 filename = 'houston_election_data.csv'
 
 #set csv path
-csvpath = os.path.join('..', 'Input', filename)
+csvpath = os.path.join('Input', filename)
 
 #open csv file with encoding
 with open(csvpath, encoding = 'utf-8') as csvfile:
@@ -70,7 +70,7 @@ print("2nd Advancing Candidate: " + second_place)
 print("--------------------------------")
 
 # Specify the file to write to
-output_path = os.path.join("..", "Output", "candidate_summary.csv")
+output_path = os.path.join("Output", "candidate_summary.csv")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline = '') as datafile:
